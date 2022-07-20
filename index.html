@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+
+<html lang="en" class="root">
+    <head>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta name="description" content="This website interface is pretty much looks the same as facebook interface">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <title>Backbook</title>
+    </head>
+    <body>
+        <!--Header-->
+
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <h3>Backbook</h3>
+                    <ul>
+                        <li title="Notification"><img src="images/notification.png" alt=""></li>
+                        <li title="Inbox"><img src="images/inbox.png" alt=""></li>
+                        <li title="Video"><img src="images/video.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <img src="images/search.png" alt="" class="search-img">
+                        <input type="text" placeholder="Search Backbook" name="search" autocomplete="off">
+                    </div>
+                    <div class="nav-user-icon" onclick="showDropdownMenu()">
+                        <img src="images/muhammed2.jpg" alt="" title="Your Profile"></img>
+                    </div>
+                </div>
+
+                <div class="drop-down--menu">
+                    <div class="show-profile">
+                        <div>
+                            <img src="images/muhammed2.jpg" alt="">
+                            <p>Mohamed Abobakr</p>
+                            <i class="uil uil-moon" onclick="changeColor()" id="dark"></i>
+                        </div>
+                        <hr>
+                        <a href="#">See all profiles</a>
+                    </div>
+                    <div class="settings">
+                        <div>
+                            <img src="images/setting.png" alt="" class="settings-png">
+                            <p>Settings & privacy</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/help.png" alt="" class="settings-png">
+                            <p>Help & support</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/display.png" alt="" class="settings-png">
+                            <p>Display & accessibility</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/feedback.png" alt="" class="settings-png">
+                            <p>Give feedback</p>
+                        </div>
+                        <div>
+                            <img src="images/logout.png" alt="" class="settings-png">
+                            <p>Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <!-- Section -->
+
+        <section>
+            <!-- Left sidebar -->
+            <div class="left-sidebar">
+                <div class="important-links">
+                    <a href="#"><img src="images/news.png" alt=""> Latest News</a>
+                    <a href="#"><img src="images/friends.png" alt=""> Friends</a>
+                    <a href="#"><img src="images/group.png" alt=""> Group</a>
+                    <a href="#"><img src="images/marketplace.png" alt=""> Marketplace</a>
+                    <a href="#"><img src="images/watch.png" alt=""> Watch</a>
+                    <a href="#"><i class="fa-solid fa-angle-down"></i>See More</a>
+                </div>
+                <div class="shortcut-links">
+                    <p>Your Shortcuts</p>
+                    <a href="#"><img src="images/shortcut-1.png" alt=""> Front-end Developers</a>
+                    <a href="#"><img src="images/shortcut-2.png" alt=""> Back-end Developers</a>
+                    <a href="#"><img src="images/shortcut-3.png" alt=""> UI-UX Designers</a>
+                    <a href="#"><img src="images/shortcut-4.png" alt=""> Website Experts</a>
+                </div>
+            </div>
+
+            <!-- Main content -->
+            <div class="main-content">
+                <div class="story-gallary">
+                    <div class="story">
+                        <img src="images/upload.png" alt="">
+                        <p>Post Story</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/Cillian-Murphy.png" alt="">
+                        <p>Cillian Murphy</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/adrien-brody.png" alt="">
+                        <p>Adrien Brody</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/Hugh-Jackman.png" alt="">
+                        <p>Hugh Jackman</p>
+                    </div>
+                    <div class="story">
+                        <img src="images/tom-holland.jpg" alt="">
+                        <p>Tom Holland</p>
+                    </div>
+                    <i class="uil uil-arrow-right" title="See all stories"></i>
+                </div>
+
+                <div class="container">
+                    <div class="mind">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <input type="text" name="post" placeholder="What's on your mind, Mohamed?">
+                    </div>
+                    <div class="files">
+                        <div class="live">
+                            <i class="uil uil-video"></i>
+                            <p>Live video</p>
+                        </div>
+                        <div class="photo-video">
+                            <i class="uil uil-images"></i>
+                            <p>Photo/video</p>
+                        </div>
+                        <div class="feeling">
+                            <i class="uil uil-smile"></i>
+                            <p>Feeling/activity</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container">
+                    <div class="info">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="more">
+                            <p>Mohamed Abobakr <span>updated his profile picture</span></p>
+                            <p>Yesterday at 11:01 PM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <p>We're gonna have to be patient, fight the negative thinking, and hang on to our dream. Because at the end of the day we are going to reach our goal.💙💙</p>
+                    
+                    <div class="photos">
+                        <img src="images/elkods.jpg" alt="">
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>521</span>
+                        </div>
+                        <div>
+                            <span>212 Comments</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container">
+                    <div class="info">
+                        <img src="images/Hugh-Jackman.png" alt="">
+                        <div class="more">
+                            <p>Hugh Jackman <span class="check"><i class="uil uil-check"></i></span></p>
+                            <p>Yesterday at 12:47 PM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <p>Photo by Emilio Madrid. Styled by Tom Ford. Groomed by Jerry Popolis.</p>
+
+                    <div class="hugh background">
+                        <img src="images/Hugh-Jackman3.png" alt="" class="source-img">
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>50K</span>
+                        </div>
+                        <div>
+                            <span>2.3K Comments</span>
+                            <span>429 Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="info">
+                        <img src="images/apple-logo.png" alt="" class="apple">
+                        <div class="more">
+                            <p>Apple</p>
+                            <p>December 14, 2021 <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <p>Soon we will introduce Macbook Pro 2022 with new features, it's not like any old MacBook. It's unique, coming soon...</p>
+
+                    <div class="background">
+                        <img src="images/macbook.jpg" alt="" class="source-img">
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>112K</span>
+                        </div>
+                        <div>
+                            <span>4.9K Comments</span>
+                            <span>1.5K Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container">
+                    <div class="info">
+                        <img src="images/century-fox.jpg" alt="">
+                        <div class="more">
+                            <p>20th Century Studios <span class="check"><i class="uil uil-check"></i></span></p>
+                            <p>July 6 at 5:00 PM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <div class="paragraphs">
+                        <p>A lot of this actually happened.</p>
+                        <p>Amsterdam, a new film from David O. Russell, arrives in theaters November 2022. </p>
+                    </div>
+
+                    <a href="#">#AmsterdamMovie</a>
+
+                    <div class="background">
+                        <iframe src="https://www.youtube.com/embed/GLs2xxM0e78" class="source-iframe"></iframe>
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>Tom Holland and 21K others</span>
+                        </div>
+                        <div>
+                            <span>3.8K Comments</span>
+                            <span>6.2K Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="container">
+                    <div class="info">
+                        <img src="images/paramount.jpg" alt="">
+                        <div class="more">
+                            <p>Paramount Pictures <span class="check"><i class="uil uil-check"></i></span></p>
+                            <p>June 22 at 3:06 PM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <p class="smile">What makes you smile? Watch the first trailer for <a href="#">#SmileMovie</a>, in cinemas soon.</p>
+
+                    <div class="background">
+                        <iframe src="https://www.youtube.com/embed//BcDK7lkzzsU" class="source-iframe"></iframe>
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>128</span>
+                        </div>
+                        <div>
+                            <span>160 Comments</span>
+                            <span>76 Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="info">
+                        <img src="images/chris-hemsworth-profile.png" alt="">
+                        <div class="more">
+                            <p>Chris Hemsworth <span class="check"><i class="uil uil-check"></i></span></p>
+                            <p>Yesterday at 12:31 AM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                    <p>@centrfit has got everything you need for your fitness journey. What it doesn’t have is advice on what to do with your hands in photos. I’m hoping this helps everyone out there. Here’s my 3 looks....</p>
+
+                    <div class="background grid-2">
+                        <img src="images/chris-hemsworth-fit.png" alt="" class="source-img">
+                        <img src="images/chris-hemsworth-fit2.png" alt="" class="source-img">
+                        <img src="images/chris-hemsworth-fit3.png" alt="" class="source-img">
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>215K</span>
+                        </div>
+                        <div>
+                            <span>6.1K Comments</span>
+                            <span>4.9K Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="post-container">
+                    <div class="info">
+                        <img src="images/chris-hemsworth-profile.png" alt="">
+                        <div class="more">
+                            <p>Chris Hemsworth <span class="check"><i class="uil uil-check"></i></span> <span>updated his profile picture</span></p>
+                            <p>Friday at 10:14 PM <i class="fa-solid fa-earth-americas"></i></p>
+                        </div>
+                        <div class="dots">
+                            <div></div>
+                            <div></div>
+                            <div></div>
+                        </div>
+                    </div>
+
+                   
+                    
+                    <div class="photos hemsworth">
+                        <img src="images/chris-hemsworth-background.png" alt="">
+                    </div>
+
+                    <div class="reactions">
+                        <div>
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <i class="fa-solid fa-heart"></i>
+                            <span>135K</span>
+                        </div>
+                        <div>
+                            <span>32K Comments</span>
+                            <span>19K Shares</span>
+                        </div>
+                    </div>
+
+                    <div class="interaction">
+                        <div>
+                            <i class="fa-regular fa-thumbs-up"></i>
+                            <span>Like</span>
+                        </div>
+                        <div>
+                            <i class="fa-regular fa-message"></i>
+                            <span>Comment</span>
+                        </div>
+                        <div>
+                            <i class="uil uil-share"></i>
+                            <span>Share</span>
+                        </div>
+                    </div>
+
+                    <div class="write-comment">
+                        <img src="images/muhammed2.jpg" alt="">
+                        <div class="comment">
+                            <input type="text" name="comment" placeholder="Write a comment...">
+                            <div class="comment-icons">
+                                <i class="fa-regular fa-face-smile"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right sidebar -->
+            <div class="right-sidebar">
+                <div class="sidebar-title">
+                    <h4>Events</h4>
+                    <a href="#">See All</a>
+                </div>
+                <div class="event">
+                    <div class="left-side">
+                        <h2>7</h2>
+                        <span>August</span>
+                    </div>
+                    <div class="right-side">
+                        <h4>Programming</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Harvard-University</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="event">
+                    <div class="left-side">
+                        <h2>15</h2>
+                        <span>September</span>
+                    </div>
+                    <div class="right-side">
+                        <h4>Algorithms</h4>
+                        <p><i class="fa-solid fa-location-dot"></i> Oxford-University</p>
+                        <a href="#">More Info</a>
+                    </div>
+                </div>
+                <div class="sidebar-title">
+                    <h4>Advertisement</h4>
+                    <a href="#">Close</a>
+                </div>
+                <img src="images/advertisement.png" alt="" class="sidebar-ads">
+
+                <div class="sidebar-title">
+                    <h4>Conversation</h4>
+                    <a href="#">Hide Chat</a>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/adrien-brody.png" alt="">
+                    </div>
+                    <p>Adrien Brody</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/chris-hemsworth-profile.png" alt="">
+                    </div>
+                    <p>Chris Hemsworth</p>
+                </div>
+
+                <div class="online-list">
+                    <img src="images/Cillian-Murphy.png" alt="">
+                    <p>Cillian Murphy</p>
+                </div>
+
+                <div class="online-list">
+                    <img src="images/leonardo-dicaprio.png" alt="">
+                    <p>Leonardo DiCaprio</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/andrew-garfield.png" alt="">
+                    </div>
+                    <p>Andrew Garfield</p>
+                </div>
+                
+                <div class="online-list">
+                    <img src="images/jennifer-lawrence.jpg" alt="">
+                    <p>Jennifer Lawrence</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/tom-holland.jpg" alt="">
+                    </div>
+                    <p>Tom Holland</p>
+                </div>
+
+                <div class="online-list">
+                    <img src="images/Kirsten-Dunst.png" alt="">
+                    <p>Kirsten Dunst</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/Hugh-Jackman.png" alt="">
+                    </div>
+                    <p>Hugh Jackman</p>
+                </div>
+
+                <div class="online-list">
+                    <div class="online">
+                        <img src="images/Joaquin-Phoenix.png" alt="">
+                    </div>
+                    <p>Joaquin Phoenix</p>
+                </div>
+
+                <div class="online-list">
+                    <img src="images/matthew-mcconaughey.jpg" alt="">
+                    <p>Mattew Mcconaughey</p>
+                </div>
+            </div>
+        </section>
+
+        <script src="main.js"></script>
+    </body>
+</html>
