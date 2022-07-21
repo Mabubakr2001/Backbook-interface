@@ -277,7 +277,7 @@ nav .nav-left h3{
 section{
     display: flex;
     justify-content: space-between;
-    padding: 17px 8px;
+    padding: 0 8px 0;
 }
 
 /* Left sidebar*/
@@ -289,10 +289,16 @@ section{
     position: sticky;
     top: 70px;
     align-self: flex-start;
+    margin-top: 20px;
 }
 
 .important-links{
+    width: 100%;
     border-bottom: 1.5px solid #dbdbdb;
+}
+
+.shortcut-links{
+    width: 100%;
 }
 
 .important-links a,
@@ -302,7 +308,7 @@ section{
     align-items: center;
     color: #626262;
     padding: 12px 8px;
-    width: 90%;
+    width: 100%;
     border-radius: 10px;
 }
 
@@ -352,7 +358,8 @@ section{
     top: 70px;
     align-self: flex-start;
     background-color: var(--bodyBackground);
-    padding: 0 20px;
+    padding-right: 20px;
+    margin-top: 20px;
     border-radius: 4px;
     color: #626262;
 }
@@ -460,6 +467,7 @@ section{
 
 .main-content{
     flex-basis: 47%;
+    margin: 20px 60px 0;
 }
 
 
@@ -628,13 +636,12 @@ section{
     padding: 10px 15px 0;
     width: 100%;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 .files div{
     border-radius: 10px;
-    width: 30%;
+    width: calc(100% / 3);
     height: 40px;
     display: flex;
     justify-content: center;
