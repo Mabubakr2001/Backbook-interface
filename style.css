@@ -17,7 +17,7 @@
     --navBackground: #242526;
     --bodyBackground: #000;
     --inputBackground: #3A3B3C;
-    --mainColor: #000;
+    --mainColor: #242526;
     --subColor: #3A3B3C;
     --hoverColor: #dddddd24;
     --photoBackground: #161415;
@@ -67,7 +67,7 @@ nav{
     justify-content: space-between;
     align-items: center;
     background-color: var(--navBackground);
-    padding: 5px 2%;
+    padding: 5px 16px;
     position: sticky;
     top: 0;
     z-index: 100;
@@ -277,15 +277,14 @@ nav .nav-left h3{
 section{
     display: flex;
     justify-content: space-between;
-    padding: 17px 2%;
+    padding: 17px 8px;
 }
 
 /* Left sidebar*/
 
 .left-sidebar{
-    background-color: var(--mainColor);
+    background-color: var(--bodyBackground);
     border-radius: 4px;
-    padding: 20px;
     flex-basis: 25%;
     position: sticky;
     top: 70px;
@@ -301,9 +300,19 @@ section{
     text-decoration: none;
     display: flex;
     align-items: center;
-    margin-bottom: 30px;
     color: #626262;
-    width: fit-content;
+    padding: 12px 8px;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.important-links a:nth-child(6){
+    margin-bottom: 10px;
+}
+
+.important-links a:hover,
+.shortcut-links a:hover{
+    background-color: var(--hoverColor);
 }
 
 .important-links a img{
@@ -324,7 +333,7 @@ section{
 }
 
 .shortcut-links p{
-    margin: 25px 0;
+    margin: 20px 0 20px 8px;
     color: #626262;
     font-weight: 500;
 }
@@ -342,8 +351,8 @@ section{
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background-color: var(--mainColor);
-    padding: 20px;
+    background-color: var(--bodyBackground);
+    padding: 0 20px;
     border-radius: 4px;
     color: #626262;
 }
@@ -424,7 +433,13 @@ section{
 .online-list{
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    padding: 10px 8px;
+    border-radius: 10px;
+}
+
+.online-list:hover{
+    background-color: var(--hoverColor);
+    cursor: pointer;
 }
 
 .online-list .online{
