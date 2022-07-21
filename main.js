@@ -6,6 +6,19 @@ function showDropdownMenu(){
     dropDownMenu.classList.toggle('drop-down--menu---view')
 }
 
+function changeColor(){
+    darkMode.classList.toggle('white')
+    darkMode.classList.toggle('black')
+    root.classList.toggle('dark-theme')
+    
+    if (localStorage.getItem("theme") === "light"){
+        localStorage.setItem("theme", "dark")
+    }
+    else{
+        localStorage.setItem("theme", "light")
+    }
+}
+
 if (localStorage.getItem("theme") === "light"){
     darkMode.classList.remove('white')
     darkMode.classList.remove('black')
@@ -18,18 +31,5 @@ else if (localStorage.getItem("theme") === "dark"){
 }
 else{
     localStorage.setItem("theme", "light")
-}
-
-function changeColor(){
-    darkMode.classList.toggle('white')
-    darkMode.classList.toggle('black')
-    root.classList.toggle('dark-theme')
-    
-    if (localStorage.getItem("theme") === "light"){
-        localStorage.setItem("theme", "dark")
-    }
-    else{
-        localStorage.setItem("theme", "light")
-    }
 }
 
