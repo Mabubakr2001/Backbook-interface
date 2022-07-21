@@ -4,34 +4,26 @@
     --navBackground: #1876f2;
     --bodyBackground: #efefef;
     --inputBackground: #F0F2F5;
-    --backGround: #fff;
-    --containerBackground: #fff;
-    --hoverColor: #f0f0f0;
-    --hoverColor2: #dddddd;
-    --commentColor: #f0f0f0;
-    --fontColor: #000;
+    --mainColor: #fff;
+    --subColor: #f0f0f0;
+    --hoverColor: #dddddd;
     --photoBackground: #000;
-    --dotsColor: #000;
+    --subColor2: #000;
     --loadmoreColor: #65676B;
     --loadmoreBackground: #fff;
-    --caretColor: #000;
 }
 
 .dark-theme{
     --navBackground: #242526;
     --bodyBackground: #000;
     --inputBackground: #3A3B3C;
-    --backGround: #000;
-    --containerBackground: #242526;
-    --hoverColor: #3A3B3C;
-    --hoverColor2: #dddddd24;
-    --commentColor: #3A3B3C;
-    --fontColor: #fff;
+    --mainColor: #000;
+    --subColor: #3A3B3C;
+    --hoverColor: #dddddd24;
     --photoBackground: #161415;
-    --dotsColor: #fff;
+    --subColor2: #fff;
     --loadmoreColor: #B0B3B8;
     --loadmoreBackground: #242526;
-    --caretColor: #fff;
 }
 
 *{
@@ -111,7 +103,7 @@ nav .nav-left h3{
     align-items: center;
     padding: 0 15px;
     margin-right: 20px;
-    caret-color: var(--caretColor);
+    caret-color: var(--subColor2);
 }
 
 .search-box{
@@ -154,9 +146,9 @@ nav .nav-left h3{
     top: 105%;
     right: 2%;
     overflow: hidden;
-    background-color: var(--backGround);
+    background-color: var(--mainColor);
     display: none;
-    color: var(--fontColor);
+    color: var(--subColor2);
 }
 
 .drop-down--menu---view{
@@ -198,13 +190,9 @@ nav .nav-left h3{
     background-color: #000;
 }
 
-.show-profile div i:hover{
-    cursor: pointer;
-}
-
 .settings div:hover,
 .show-profile a:hover{
-    background-color: var(--hoverColor);
+    background-color: var(--subColor);
     cursor: pointer;
 }
 
@@ -230,6 +218,14 @@ nav .nav-left h3{
     height: 40px;
     border-radius: 50%;
     margin-right: 10px;
+}
+
+.show-profile div i{
+    background-color: var(--subColor);
+}
+
+.show-profile div i:hover{
+    cursor: pointer;
 }
 
 .settings div{
@@ -278,7 +274,7 @@ section{
 }
 
 .left-sidebar{
-    background-color: var(--backGround);
+    background-color: var(--mainColor);
     border-radius: 4px;
     padding: 20px;
     flex-basis: 25%;
@@ -292,7 +288,7 @@ section{
     position: sticky;
     top: 70px;
     align-self: flex-start;
-    background-color: var(--backGround);
+    background-color: var(--mainColor);
     padding: 20px;
     border-radius: 4px;
     color: #626262;
@@ -529,7 +525,7 @@ section{
 
 .container{
     padding: 10px 0;
-    background-color: var(--containerBackground);
+    background-color: var(--mainColor);
     width: 100%;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -542,7 +538,7 @@ section{
 }
 
 .container p{
-    color: var(--fontColor);
+    color: var(--subColor2);
 }
 
 .container a{
@@ -590,7 +586,7 @@ section{
     background-color: var(--inputBackground);
     font-size: 1em;
     border-radius: 20px;
-    caret-color: var(--caretColor);
+    caret-color: var(--subColor2);
 }
 
 .files{
@@ -612,7 +608,7 @@ section{
 }
 
 .files div:hover{
-    background-color: var(--hoverColor);
+    background-color: var(--subColor);
     cursor: pointer;
 }
 
@@ -642,7 +638,7 @@ section{
 
 .post-container{
     padding: 10px 0;
-    background-color: var(--containerBackground);
+    background-color: var(--mainColor);
     width: 100%;
     border-radius: 10px;
     margin-bottom: 15px;
@@ -661,7 +657,7 @@ section{
 }
 
 .post-container p{
-    color: var(--fontColor);
+    color: var(--subColor2);
     font-size: 15px;
     margin: 10px 0;
     padding: 0 20px;
@@ -708,7 +704,7 @@ section{
 }
 
 .dots:hover{
-    background-color: var(--hoverColor);
+    background-color: var(--subColor);
     cursor: pointer;
 }
 
@@ -716,7 +712,7 @@ section{
     width: 4px;
     height: 4px;
     border-radius: 50%;
-    background-color: var(--dotsColor);
+    background-color: var(--subColor2);
 }
 
 .dots div:nth-child(2),
@@ -775,7 +771,7 @@ section{
 }
 
 .interaction div:hover{
-    background-color: var(--hoverColor);
+    background-color: var(--subColor);
     cursor: pointer;
 }
 
@@ -822,7 +818,7 @@ section{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--commentColor);
+    background-color: var(--subColor);
     padding: 20px 15px;
     border-radius: 20px;
 }
@@ -832,9 +828,9 @@ section{
     width: 90%;
     border: none;
     outline: none;
-    background-color: var(--commentColor);
+    background-color: var(--subColor);
     font-size: 0.9em;
-    caret-color: var(--caretColor);
+    caret-color: var(--subColor2);
 }
 
 .comment-icons{
@@ -847,7 +843,7 @@ section{
 }
 
 .comment-icons:hover{
-    background-color: var(--hoverColor2);
+    background-color: var(--hoverColor);
     cursor: pointer;
 }
 
