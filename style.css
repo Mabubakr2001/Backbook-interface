@@ -1016,3 +1016,279 @@ section{
 .hemsworth::after{
     background-image: url('images/chris-hemsworth-profile.png');
 }
+
+
+/* Profile Page */
+
+.gradient{
+    width: 100%;
+    padding: 0;
+    background-image: linear-gradient(#C1D4F0, var(--mainColor), var(--mainColor));
+}
+
+.gradient-cover{
+    width: 80%;
+    height: 405px;
+    margin: 0 auto;
+    background-image: url('images/elkods.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    border-radius: 5px;
+}
+
+.gradient-cover:hover{
+    cursor: pointer;
+}
+
+.edit-cover{
+    position: absolute;
+    bottom: 15px;
+    right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.edit-cover:hover{
+    cursor: pointer;
+}
+
+.edit-cover i{
+    margin-right: 8px;
+}
+
+.gradient-face{
+    width: 75%;
+    margin: 0 auto;
+    padding-bottom: 20px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--hoverColor);
+}
+
+.face-image{
+    width: 168px;
+    height: 168px;
+    border-radius: 50%;
+    border: 4px solid var(--mainColor);
+    background-image: url('images/muhammed2.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 100;
+    position: relative;
+    top: -20px;
+    margin-right: 15px;
+}
+
+.face-image:hover{
+    cursor: pointer;
+}
+
+.face-image i{
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+    font-size: 20px;
+    color: var(--subColor2);
+    background-color: var(--subColor);
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.face-image i:hover{
+    cursor: pointer;
+}
+
+.face-info{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.face-info h3{
+    font-size: 30px;
+    font-weight: 600;
+    color: var(--subColor2);
+}
+
+.face-info p{
+    color: #B0B3B8;
+    margin-bottom: 10px;
+}
+
+.friends img{
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--mainColor);
+    border-radius: 50%;
+}
+
+.friends img:hover{
+    cursor: pointer;
+}
+
+.friends img:nth-child(2){
+    position: relative;
+    left: -12px;
+}
+
+.friends img:nth-child(3){
+    position: relative;
+    left: -24px;
+}
+
+.friends img:nth-child(4){
+    position: relative;
+    left: -36px;
+}
+
+.friends img:nth-child(5){
+    position: relative;
+    left: -48px;
+}
+
+.friends img:nth-child(6){
+    position: relative;
+    left: -60px;
+}
+
+.friends img:nth-child(7){
+    position: relative;
+    left: -72px;
+}
+
+.friends img:nth-child(8){
+    position: relative;
+    left: -84px;
+}
+
+.friends img:nth-child(9){
+    position: relative;
+    left: -96px;
+}
+
+.friends img:nth-child(10){
+    position: relative;
+    left: -108px;
+}
+
+.friends img:nth-child(11){
+    position: relative;
+    left: -120px;
+}
+
+.friends img:nth-child(12){
+    position: relative;
+    left: -132px;
+}
+
+.friends img:nth-child(13){
+    position: relative;
+    left: -144px;
+}
+
+.edit-profile{
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    width: 267px;
+}
+
+.edit-profile div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 7px 10px;
+    border-radius: 5px;
+}
+
+.edit-profile div:hover{
+    cursor: pointer;
+}
+
+.edit-profile div:nth-child(2){
+    width: 127px;
+}
+
+.edit-profile div p{
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.edit-profile div i{
+    margin-right: 5px;
+    font-size: 0.8em;
+}
+
+.add-story{
+    background-color: #1A6ED8;
+    color: #fff;
+}
+
+.add-story i{
+    padding: 3px 3px 1px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #1A6ED8;
+}
+
+.profile-edit{
+    background-color: #E4E6EB;
+}
+
+.browse{
+    padding: 5px 0;
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.browse ul{
+    list-style: none;
+    display: flex;
+}
+
+.browse ul li{
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+}
+
+
+.browse ul li:hover{
+    background-color: var(--hoverColor);
+    cursor: pointer;
+}
+
+.browse ul li i{
+    color: #707276;
+    margin-left: 5px;
+}
+
+
+.browse ul li a{
+    text-decoration: none;
+    color: #707276;
+    font-size: 1em;
+    font-weight: 600;
+}
+
+.browse ul li:nth-child(1) a{
+    color: #1A6ED8;
+}
+
+.browse .dots{
+    width: 60px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    position: static;
+    border-radius: 10px;
+}
