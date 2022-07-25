@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en" class="root">
+    <head>
+        <meta name=viewport content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <title>Profile Page</title>
+    </head>
+    <body>
+
+        <!-- Header -->
+        <header>
+            <nav>
+                <div class="nav-left">
+                    <h3>Backbook</h3>
+                    <ul>
+                        <li title="Notification"><img src="images/notification.png" alt=""></li>
+                        <li title="Inbox"><img src="images/inbox.png" alt=""></li>
+                        <li title="Video"><img src="images/video.png" alt=""></li>
+                    </ul>
+                </div>
+                <div class="nav-right">
+                    <div class="search-box">
+                        <img src="images/search.png" alt="" class="search-img">
+                        <input type="text" placeholder="Search Backbook" name="search" autocomplete="off">
+                    </div>
+                    <div class="nav-user-icon" onclick="showDropdownMenu()">
+                        <img src="images/muhammed2.jpg" alt="" title="Your Profile"></img>
+                    </div>
+                </div>
+
+                <div class="drop-down--menu">
+                    <div class="show-profile">
+                        <div>
+                            <img src="images/muhammed2.jpg" alt="">
+                            <p>Mohamed Abobakr</p>
+                            <i class="uil uil-moon" onclick="changeColor()" id="dark"></i>
+                        </div>
+                        <hr>
+                        <a href="#">See all profiles</a>
+                    </div>
+                    <div class="settings">
+                        <div>
+                            <img src="images/setting.png" alt="" class="settings-png">
+                            <p>Settings & privacy</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/help.png" alt="" class="settings-png">
+                            <p>Help & support</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/display.png" alt="" class="settings-png">
+                            <p>Display & accessibility</p>
+                            <img src="images/arrow.png" alt="" width="10px" class="settings-arrow">
+                        </div>
+                        <div>
+                            <img src="images/feedback.png" alt="" class="settings-png">
+                            <p>Give feedback</p>
+                        </div>
+                        <div>
+                            <img src="images/logout.png" alt="" class="settings-png">
+                            <p>Logout</p>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- Profile Section -->
+
+        <div class="gradient">
+            <div class="gradient-cover">
+                    <div class="edit-cover">
+                        <i class="fa-solid fa-camera"></i>
+                        <p>Edit cover photo</p>
+                    </div>
+            </div>
+            <div class="gradient-face">
+                <div class="face-image">
+                    <i class="fa-solid fa-camera"></i>
+                </div>
+                <div class="face-info">
+                    <h3>Mohamed Abubakr</h3>
+                    <p>13 friends</p>
+                    <div class="friends">
+                        <img src="images/jake-gyllenhaal.jpg" alt="">
+                        <img src="images/jennifer-lawrence.jpg" alt="">
+                        <img src="images/Dwayne_Johnson2.png" alt="">
+                        <img src="images/tom-holland.jpg" alt="">
+                        <img src="images/chris-hemsworth-profile.png" alt="">
+                        <img src="images/Hugh-Jackman.png" alt="">
+                        <img src="images/matthew-mcconaughey.jpg" alt="">
+                        <img src="images/Kirsten-Dunst.png" alt="">
+                        <img src="images/adrien-brody.png" alt="">
+                        <img src="images/Cillian-Murphy.png" alt="">
+                        <img src="images/leonardo-dicaprio.png" alt="">
+                        <img src="images/andrew-garfield.png" alt="">
+                        <img src="images/Joaquin-Phoenix.png" alt="">
+                    </div>
+                </div>
+                <div class="edit-profile">
+                    <div class="add-story">
+                        <i class="fa-solid fa-plus"></i>
+                        <p>Add to story</p>
+                    </div>
+                    <div class="profile-edit">
+                        <i class="uil uil-pen"></i>
+                        <p>Edit profile</p>
+                    </div>
+                </div>
+            </div>
+            <div class="browse">
+                <ul>
+                    <li><a href="#">Posts</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Friends</a></li>
+                    <li><a href="#">Photos</a></li>
+                    <li><a href="#">Videos</a></li>
+                    <li><a href="#">Check-ins</a></li>
+                    <li><a href="#">More</a><i class="fa-solid fa-arrow-down"></i></li>
+                </ul>
+                <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
