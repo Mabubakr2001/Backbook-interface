@@ -82,19 +82,20 @@ nav .nav-right{
 nav .nav-left ul{
     list-style-type: none;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 150px;
-    padding-top: 5px;
+    padding-top: 3px;
 }
 
 
-nav .nav-left ul li img{
-    width: 25px;
+nav .nav-left ul li a i{
+    font-size: 20px;
+    color: #fff;
     cursor: pointer;
 }
 
-nav .nav-left ul li img:hover{
+nav .nav-left ul li a i:hover{
     transform: scale(1.1);
 }
 
@@ -1295,6 +1296,12 @@ section{
     width: 80%;
     margin: 0 auto;
     display: flex;
+}
+
+.left-side{
+    position: sticky;
+    top: 50px;
+    align-self: flex-start;
 }
 
 .left-side > div{
