@@ -713,7 +713,7 @@ section{
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding: 0 15px;
     margin-bottom: 10px;
 }
 
@@ -915,7 +915,10 @@ section{
     margin-top: 10px;
     display: flex;
     justify-content: center;
+}
 
+.background:hover{
+    cursor: pointer;
 }
 
 .background .source-img{
@@ -1007,11 +1010,63 @@ section{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    gap: 2px;
+    gap: 2.5px 3px;
 }
 
 .grid-2 img:nth-child(1){
     grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-3{
+    position: relative;
+    height: 459px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2.5px 3px;
+}
+
+.grid-3::after{
+    content: "+7";
+    position: absolute;
+    bottom: -2.5px;
+    right: 0;
+    width: 159px;
+    height: 159px;
+    background-color: #00000057;
+    color: #fff;
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.grid-3 img{
+    border-radius: 0;
+    cursor: pointer;
+}
+
+.grid-3 img:nth-child(1),
+.grid-3 img:nth-child(2){
+    height: 300px;
+    width: 100%;
+}
+
+.grid-3 img:nth-child(1){
+    grid-area: 1 / 1 / 3 / 3;
+}
+
+.grid-3 img:nth-child(2){
+    grid-area: 1 / 3 / 3 / 5;
+}
+
+.grid-3 img:nth-child(3),
+.grid-3 img:nth-child(4),
+.grid-3 img:nth-child(5),
+.grid-3 img:nth-child(6){
+    height: 159px;
+    width: 100%;
 }
 
 .hemsworth::after{
@@ -1300,8 +1355,8 @@ section{
 
 .left-side{
     position: sticky;
-    top: 50px;
-    align-self: flex-start;
+    bottom: 0;
+    align-self: flex-end;
 }
 
 .left-side > div{
